@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+    }
+    label, button, p {
+      display: block;
+      margin: 1rem 0;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <label for="phrase">Enter a phrase:</label>
+    <input type="text" id="phrase" placeholder="Enter a phrase to generate password">
+    <button id="generate-btn">Generate Password</button>
+    <p><strong>Generated Password:</strong> <span id="password-output"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
